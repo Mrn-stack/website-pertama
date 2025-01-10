@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Web | Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="co-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-a"></i>
+            <div class="logo-text">Agha Purwa</div>
+          </div>
+          <nav>
+            <div class="tgglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="ul-nav">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About me</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="picture">
+            <img src="img/Gambar3.jpeg" alt="pic profile">
+          </div>
+          <div class="text">
+            <h5>Hi I'm <span class="input">a student Polytecnic Of Jember</span></h5>
+            <h1>Nugraha</h1>
+            <p>
+              Selamat datang di website pertama saya. Saya ingin mengucapkan terimakasih kepada teman-teman yang sudah mengklik link yang sudah saya berikan, tenang link tadi bukan link phising untuk meng-hack software anda, melainkan anda semua diarahkan kedalam web pertama yang saya buat. Jadi, apabila ada kesalahan mengenai tampilan seperti logo,navbar,teks dll saya ingin meminta maaf karena saya hanya manusia biasa,bukan nabi boyy.
+            </p>
+            <div class="btn-grup">
+              <a href="" class="btn-active">Contact</a>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/purwangrha/?igsh=MXhjeWNoZXE0bjRhZQ%3D%3D#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/6285780344815"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      var togglebtn = document.querySelector(".tgglebtn"); 
+      var nav = document.querySelector(".ul-nav");
+      var links = document.querySelectorAll(".ul-nav li"); // Untuk mengambil semua elemen <li>, gunakan querySelectorAll
+
+      togglebtn.addEventListener("click", function () {
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+});
+
+
+        var typed = new Typed(".input",{
+          strings:["a student Polytecnic Of Jember", "Junior Engginers","Have a nice day!"],
+          typedSpeed:50,
+          backSpeed:45,
+          loop:true
+        })
+
+    </script>
+      </body>
+</html>
